@@ -20,4 +20,8 @@ func init() {
 func main() {
 	text := os.Getenv("TEXT")
 	fmt.Printf("%s\n", text) // "Hello, World!
+
+	os.Setenv("TEXT", "Hello, Apple!")
+	text = os.Getenv("TEXT")
+	fmt.Printf("%s\n", text) // "Hello, Apple!
 }
